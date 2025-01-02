@@ -1,0 +1,143 @@
+{
+    "1": {
+        "forum_id": 2,
+        "title": "What does everyone think of my farm?",
+        "content": "Its still work in progress but i would like to get some feedback on what you all think!",
+        "user_id": 3,
+        "created_at": "2024-09-16T02:40:02.000000Z",
+        "updated_at": "2024-09-16T02:40:02.000000Z",
+        "likes": [],
+        "comments": [
+            {
+                "comment_id": 7,
+                "comment": "I love it",
+                "parent": null,
+                "forum_id": 2,
+                "user_id": 3,
+                "created_at": "2024-09-16T03:15:18.000000Z",
+                "updated_at": "2024-09-16T03:15:18.000000Z"
+            }
+        ],
+        "user": {
+            "user_id": 3,
+            "username": "JellyFish",
+            "email": "jellyfish@example.com",
+            "passwd": "$2y$12$8zgDWyifvkQXDurBckE6NeEmqJp8hX\/Q2uIzG4ffmg8\/n71uUdXP.",
+            "picture": null,
+            "created_at": "2024-09-16T00:43:30.000000Z",
+            "updated_at": "2024-09-16T00:43:30.000000Z",
+            "name": "Oliver Tan"
+        }
+    },
+    "0": {
+        "forum_id": 1,
+        "title": "I love my family garden",
+        "content": "Me and my family have been having a great time growing our own vegetables but it seems to be yielding lesser crops.\r\n\r\nDoes anyone know why this is?",
+        "user_id": 2,
+        "created_at": "2024-09-16T00:52:19.000000Z",
+        "updated_at": "2024-09-16T00:52:19.000000Z",
+        "likes": [],
+        "comments": [
+            {
+                "comment_id": 1,
+                "comment": "This is a parent comment by john_doe",
+                "parent": null,
+                "forum_id": 1,
+                "user_id": 1,
+                "created_at": "2024-09-16T00:54:06.000000Z",
+                "updated_at": "2024-09-16T00:54:06.000000Z"
+            },
+            {
+                "comment_id": 2,
+                "comment": "This is a reply to the parent comment by john_doe",
+                "parent": 1,
+                "forum_id": 1,
+                "user_id": 1,
+                "created_at": "2024-09-16T00:54:06.000000Z",
+                "updated_at": "2024-09-16T00:54:06.000000Z"
+            },
+            {
+                "comment_id": 3,
+                "comment": "This is a parent comment by jane_doe",
+                "parent": null,
+                "forum_id": 1,
+                "user_id": 2,
+                "created_at": "2024-09-16T00:54:06.000000Z",
+                "updated_at": "2024-09-16T00:54:06.000000Z"
+            },
+            {
+                "comment_id": 4,
+                "comment": "This is a reply to the parent comment by jane_doe",
+                "parent": 1,
+                "forum_id": 1,
+                "user_id": 2,
+                "created_at": "2024-09-16T00:54:06.000000Z",
+                "updated_at": "2024-09-16T00:54:06.000000Z"
+            },
+            {
+                "comment_id": 5,
+                "comment": "This is a parent comment by JellyFish",
+                "parent": null,
+                "forum_id": 1,
+                "user_id": 3,
+                "created_at": "2024-09-16T00:54:06.000000Z",
+                "updated_at": "2024-09-16T00:54:06.000000Z"
+            },
+            {
+                "comment_id": 6,
+                "comment": "This is a reply to the parent comment by JellyFish",
+                "parent": 1,
+                "forum_id": 1,
+                "user_id": 3,
+                "created_at": "2024-09-16T00:54:06.000000Z",
+                "updated_at": "2024-09-16T00:54:06.000000Z"
+            },
+            {
+                "comment_id": 8,
+                "comment": "does this work?",
+                "parent": null,
+                "forum_id": 1,
+                "user_id": 3,
+                "created_at": "2024-09-16T05:03:26.000000Z",
+                "updated_at": "2024-09-16T05:03:26.000000Z"
+            },
+            {
+                "comment_id": 9,
+                "comment": "it works now",
+                "parent": null,
+                "forum_id": 1,
+                "user_id": 3,
+                "created_at": "2024-09-16T05:06:46.000000Z",
+                "updated_at": "2024-09-16T05:06:46.000000Z"
+            },
+            {
+                "comment_id": 10,
+                "comment": "hi",
+                "parent": null,
+                "forum_id": 1,
+                "user_id": 3,
+                "created_at": "2024-09-16T05:12:32.000000Z",
+                "updated_at": "2024-09-16T05:12:32.000000Z"
+            },
+            {
+                "comment_id": 11,
+                "comment": "hi",
+                "parent": 1,
+                "forum_id": 1,
+                "user_id": 3,
+                "created_at": "2024-09-16T05:13:18.000000Z",
+                "updated_at": "2024-09-16T05:13:18.000000Z"
+            }
+        ],
+        "user": {
+            "user_id": 2,
+            "username": "jane_doe",
+            "email": "jane@example.com",
+            "passwd": "$2y$12$BRJmYbb7neGxyX1ew.6p8uOQtZiCiyQ3Llcx\/t.XOl8L7Mhph7j6S",
+            "picture": null,
+            "created_at": "2024-09-16T00:43:29.000000Z",
+            "updated_at": "2024-09-16T00:43:29.000000Z",
+            "name": "Jane Doe"
+        }
+    }
+}

@@ -1,0 +1,165 @@
+/* Wrapper for main content area */
+.content-wrapper {
+    position:relative;
+    display: flex;
+}
+
+/* Sidebar (left column) */
+.sidebar {
+    /*background-image: repeating-linear-gradient(rgb(0, 255, 55), rgb(0, 255, 21) 10%, rgb(179, 219, 19) 20%);*/
+    position: fixed; /* Keeps the sidebar fixed while scrolling */
+    width: 300px; /* Fixed width for sidebar */
+    padding: 20px;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.dummy-space {
+    width: 300px; /* Same width as the sidebar */
+    height: 100%;
+}
+
+/* Main content (center column) */
+.main-content {
+    width: 700px; /* Fixed width for right content */
+    padding: 20px;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* Right content (right column) */
+.right-content {
+    /*background-image: repeating-linear-gradient(rgb(0, 255, 55), rgb(0, 255, 21) 10%, rgb(179, 219, 19) 20%);*/
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+    height: 100%; /* Full height of the viewport */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.sidebar .sidebar-list {
+    color: #212529;
+    align-items: center;
+}
+
+.sidebar .sidebar-list:hover {
+    text-decoration: none;
+}
+
+.sidebar-header {
+    color: #65686C;
+    margin-left: 10px;
+}
+
+
+.sidebar-list {
+    width: 100%;
+    height: 38px;
+    padding: 5px 10px;
+}
+.sidebar-text {
+    width: 100%;
+    height: 38px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+.sidebar-list:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+.prof-pic-side img {
+    width: 28px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.following {
+    align-items: center;
+    gap: 10px;
+}
+
+.follow-category {
+    margin-top: 40px;
+}
+
+.forum-category {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.forum-category.selected {
+    background-color: rgb(225, 225, 225); /* Darker background for selected category */
+    font-weight: bold;
+}
+
+.forum-category:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.empty-forum-message {
+    margin-top: 20px;
+}
+
+.form-group .form-control {
+    color: black;
+}
+
+/* search bar */
+.forum-search-bar input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: #F0F2F5;
+    font-size: 14px;
+    padding-left: 15px;
+    align-items: center;
+    color: #75787C;
+    height: 36px;
+    /* Fixed height of the div */
+    border-radius: 18px;
+}
+
+
+/* popup msg */ 
+.share-popup {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+    align-items: center;
+}
+
+#share-popup p {
+    margin: 0;
+    padding-right: 15px;
+    word-break: break-all;
+}
+
+#share-popup button {
+    background-color: rgb(187, 187, 187);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#share-popup button:hover {
+    background-color: rgb(169, 168, 168);
+}
+
+#close-popup img {
+    width: 13px;
+}
+
+

@@ -1,0 +1,92 @@
+textarea.form-control {
+    resize: none;
+}
+
+.modal-dialog {
+    max-width: 600px;
+}
+
+.btn-submit {
+    border-color: #007bff;
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.btn-submit:hover{
+    background-color: #0069d9;
+    border-color: #0069d9;
+}
+
+.file-control {
+    height: auto;
+    padding: 0;
+}
+
+.create-bottom {
+    justify-content: space-between;
+}
+
+#image-preview-container {
+    display: flex;
+    flex-wrap: wrap; /* Prevent wrapping */
+    gap: 10px; /* Space between items */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    max-width: 100%; /* Make sure it doesn't overflow the parent */
+    max-height: 140px;
+    margin-bottom: 10px;
+}
+
+.image-preview-div {
+    position: relative;
+    display: inline-block; /* Use inline-block for dynamic width */
+    border: 1px solid #ccc;
+    padding: 5px;
+    max-width: 150px; /* Limit max width of the container */
+    text-align: center; /* Center the image inside the div */
+}
+
+.image-preview-div img {
+    width: auto;
+    /* Set width to auto */
+    max-width: 100%;
+    /* Limit width to 100% of the container */
+    height: auto;
+    /* Automatically adjust height to maintain aspect ratio */
+    max-height: 100px;
+    /* Limit maximum height */
+    object-fit: contain;
+    /* Contain the image within the preview box */
+}
+
+.close-image {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the "X" horizontally */
+    align-items: center; /* Center the "X" vertically */
+    width: 22px; /* Circle width */
+    height: 22px; /* Circle height */
+    font-size: 30px; /* Adjust the font size of the "X" */
+    font-weight: bold; /* Make the "X" bold */
+    z-index: 10; /* Make sure it's above the image */
+    line-height: 25px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    color: #686F78;
+    cursor: pointer;
+    border: none;
+    background-color: #E2E5E9;
+    border-radius: 50%;
+}
+
+
+.close-image:hover {
+    background-color: #CDD0D4;
+}
+
+.close-image img {
+    width: 12px;
+}

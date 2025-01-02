@@ -1,0 +1,329 @@
+/* create forum trigger button */
+.create-forum-box {
+    display: flex;
+    background-color: #F0F2F5;
+    width: 100%;
+    padding-left: 15px;
+    align-items: center;
+    color: #75787C;
+    height: 36px;
+    /* Fixed height of the div */
+    border-radius: 18px;
+}
+
+.create-forum-box:hover {
+    background-color: #E4E6E9;
+    cursor: pointer;
+}
+
+.full-pad-card {
+    padding: 15px;
+}
+
+/*forum cards */
+.card-top {
+    justify-content: space-between;
+}
+
+/* three dot menu */
+.menu-container {
+    position: relative;
+}
+
+.three-dots {
+    cursor: pointer;
+    width: 20px;
+    /* Adjust size as needed */
+    height: 20px;
+    /* Adjust size as needed */
+    transition: opacity 0.3s ease;
+}
+
+.three-dots:hover {
+    opacity: 0.7;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    display: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    top: 5px;
+    /* Position the menu below the three-dots icon */
+    transform: translateX(-100%);
+    /* Move the menu to the left of the three-dots icon */
+    min-width: 8rem;
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.dropdown-menu li a,
+.no-style {
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    padding: 5px;
+}
+
+.dropdown-menu li a:hover,
+.no-style:active {
+    background-color: #F0F2F5;
+}
+
+.no-style:focus {
+    outline: none;
+}
+
+.no-style:active {
+    color: #333;
+}
+
+.forum-top {
+    margin-top: 30px;
+    gap: 25px;
+    font-weight: 600;
+
+}
+
+.border-card {
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.pad-card {
+    padding: 15px 15px 0px;
+}
+
+.prof-pic {
+    border-radius: 50%;
+}
+
+.prof-pic img {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin-left: 10px;
+    justify-content: space-between;
+}
+
+.follow-button {
+    margin-left: 10px;
+}
+
+.follow-button .follow-btn {
+    color: #000;
+    border: none;
+    box-shadow: none !important;
+}
+
+.follow-button .btn-gray {
+    background-color: rgb(221, 221, 221);
+}
+
+.follow-button .btn-blue {
+    color: white;
+    background-color: #007bff;
+}
+
+.follow-button .btn-gray:hover,
+.follow-button .btn-gray:active,
+.follow-button .btn-gray:focus,
+.follow-button .btn-gray:focus:active {
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+
+.follow-button .btn-blue:hover,
+.follow-button .btn-blue:active,
+.follow-button .btn-blue:focus {
+    color: white;
+    background-color: #0069d9;
+}
+
+
+.title {
+    font-weight: bold;
+}
+
+/* forum actions (like, comment, share) */
+
+.forum-actions-info {
+    justify-content: space-between;
+    font-size: .9rem;
+}
+
+.forum-actions {
+    border-top: 1px solid #d5dae0;
+    justify-content: space-around;
+}
+
+.forum-actions-btm {
+    border-bottom: 1px solid #d5dae0;
+}
+
+.forum-actions img {
+    width: 16px;
+    aspect-ratio: 1/1;
+}
+
+.forum-action-wrapper {
+    width: 100%;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.forum-action-wrapper:hover {
+    cursor: pointer;
+    background-color: #F0F2F5;
+}
+
+.forum-action {
+    flex-basis: 30%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.forum-username {
+    line-height: 1;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.forum-createTime {
+    font-size: 0.75rem;
+    color: #65686C;
+}
+
+
+/* The container for the image slides */
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 200px;
+}
+
+.mySlides {
+    display: none;
+    /* Hide all images by default */
+    justify-content: center;
+}
+
+.mySlides img {
+    width: auto;
+    height: 200px;
+}
+
+/* Style the "previous" and "next" buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    background-color: rgba(65, 65, 65, 0.8);
+}
+
+/* Position the "next" button to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "previous" button to the left */
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Add a hover effect to the buttons */
+.prev:hover,
+.next:hover {
+    background-color: #ccc;
+    color: black;
+    text-decoration: none;
+}
+
+.truncated-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* Limit to 5 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.see-more {
+    color: rgb(34, 138, 228);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.see-more:hover {
+    color: rgb(0, 85, 255);
+    text-decoration: underline;
+}
+
+a.forum-link {
+    text-decoration: none;
+    color: inherit;
+    /* Inherit color from the parent */
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+/* tags styling */
+.forum-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* Adjust the gap between the tags */
+}
+
+.tag-block {
+    display: inline-block;
+    background-color: #e5e8eb;
+    padding: 3px 8px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.tag-block:hover {
+    background-color: #d7dbde;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
