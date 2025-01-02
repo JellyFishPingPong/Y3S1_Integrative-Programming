@@ -109,10 +109,6 @@ npm run dev
 
 ## Additional Commands
 
-- **Run All Tests**: 
-  ```bash
-  php artisan test
-  ```
 - **Refresh Migrations and Seed**:
   ```bash
   php artisan migrate:refresh --seed
